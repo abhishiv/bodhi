@@ -1,0 +1,36 @@
+{
+  "name": "@oss-stealth/bodhi",
+  "version": "0.777.7",
+  "author": "Abhishiv Saxena<abhishiv@gmail.com>",
+  "description": "Unikernel",
+  "license": "UNLICENSED",
+  "keywords": [],
+  "accessConfig": {
+    "public": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.grati.co/@gratico/bootloader"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "runtimeTypings": [
+    "./dist/specs/kernel.d.ts"
+  ],
+  "scripts": {
+    "test": "echo 42",
+    "pub": "npm publish --access=public",
+    "build": "cp ../../tools/mono/Makefile ./Makefile && make build",
+    "build-watch": "cp ../../tools/mono/Makefile ./Makefile && make build-watch"
+  },
+  "browser": {},
+  "dependencies": {
+    "tslib": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.11",
+    "@types/pify": "^3.0.2",
+    "@types/react": "^16.9.36",
+    "@types/react-dom": "^16.9.8"
+  }
+}
